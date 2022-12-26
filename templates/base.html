@@ -40,9 +40,15 @@
     </div>
 </nav>
 
-{% block content %}
-    Hello
-{% endblock %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 offset-md-2">
+                {% block content %}
+                    Hello
+                {% endblock %}
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

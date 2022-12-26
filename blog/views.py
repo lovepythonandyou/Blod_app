@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 def posts_list(request):
-    name = 'Mane'
-    return render(request, 'blog/base.html', context={
-        'name': name
+    names = ['Mane', 'Egor', 'Katya']
+    return render(request, 'blog/index.html', context={
+        'names': names
     })
